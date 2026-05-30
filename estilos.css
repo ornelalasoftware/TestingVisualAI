@@ -1,0 +1,70 @@
+/* estilos.css - Premium Cyber-Tech Design System */
+
+:root {
+  /* Colores Principales */
+  --background: #131313;
+  --surface: #121212;
+  --raised: #1e1e1e;
+  --primary-cyan: #00f0ff;
+  --secondary-purple: #ebb2ff;
+  --on-surface: #e5e2e1;
+  --border-color: #2a2a2a;
+  
+  /* Fuentes */
+  --font-display: 'Geist', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 24px;
+}
+
+/* Tarjetas de Producto (Level 2 Elevation) */
+.product-card {
+  background-color: var(--raised);
+  border: 1px solid var(--border-color);
+  border-radius: 16px; /* 1rem */
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.product-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product-price {
+  font-family: var(--font-mono);
+  color: var(--primary-cyan);
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--primary-cyan);
+  color: #00363a;
+  border: none;
+  border-radius: 8px; /* 0.5rem */
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 12px var(--primary-cyan);
+}
+
+/* Chips / Etiquetas */
+.feature-chip {
+  background-color: rgba(235, 178, 255, 0.1); /* Tinte púrpura */
+  color: var(--secondary-purple);
+  border-radius: 9999px; /* Pill shape */
+  padding: 4px 12px;
+  font-size: 14px;
+  display: inline-block;
+}
